@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include<stdlib.h>
+/////////////////////////////////////////////////////////////////////
+// Function Name :- Pattern
+// Descripton : Print the pattern
+// Input : int
+// Output : Pattern
+// Author : Avanti Vijay Dalvi
+// Date : 01/11/2026
+/////////////////////////////////////////////////////////////////////
+void Pattern(int ino)
+{
+    int i = 0;
+    
+    if(ino < 0)
+    {
+        ino = -ino;
+    }
+
+    for(i = 1; i <= ino; i++)
+    {
+        printf("*\t",i,"#\t",i);
+    }
+}
+int main()
+{
+    int iValue = 0;
+
+    printf("Enter inober: ");
+    scanf("%d", &iValue);
+
+    Pattern(iValue);
+
+    return EXIT_SUCCESS;
+}
